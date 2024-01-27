@@ -29,6 +29,11 @@ header {
 
         ul {
             list-style-type: none;
+            display: flex;
+
+            li {
+                padding-right: 1rem;
+            }
 
             li {
                 a {
