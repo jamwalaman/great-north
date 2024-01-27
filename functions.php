@@ -547,7 +547,7 @@ if (is_readable($custom_walker_footer)) {
 
 
 
-function get_product_descripion()
+function get_product_description()
 {
 	return "THIS IS A PRODUCT DESCRIPTION \n";
 }
@@ -589,7 +589,7 @@ function get_products()
 {
 	return	array(
 		"product_name" => get_product_title(),
-		"product_descripion" => get_product_description(),
+		"product_description" => get_product_description(),
 		"product_price" => get_product_price(),
 	);
 }
