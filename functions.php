@@ -280,6 +280,18 @@ function great_north_widgets_init()
 			'after_title'   => '</h3>',
 		)
 	);
+
+	// Footer logo
+	register_sidebar(
+		array(
+			'name'          => 'Footer Logo',
+			'id'            => 'footer_logo',
+			'before_widget' => '',
+			'after_widget'  => '',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
+		)
+	);
 }
 add_action('widgets_init', 'great_north_widgets_init');
 

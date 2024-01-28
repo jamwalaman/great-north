@@ -22,10 +22,12 @@
 								<?php
 								$header_logo = get_theme_mod('header_logo'); // Get custom meta-value.
 
-								if (!empty($header_logo)) :
+								if ( (!empty($header_logo)) && (!is_active_sidebar('footer_logo')) ) :
 								?>
 									<img src="<?php echo esc_url($header_logo); ?>" alt="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" />
 								<?php
+								elseif (is_active_sidebar('footer_logo')) :
+									dynamic_sidebar('footer_logo');
 								else :
 									echo esc_attr(get_bloginfo('name', 'display'));
 								endif;
